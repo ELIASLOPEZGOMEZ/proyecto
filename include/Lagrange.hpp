@@ -22,9 +22,9 @@ class Lagrange {
     public:
 
         int setValores();
-        int setContadores ();
+        void setContadores ();
         void calcularLx ();
-        int calcularPolinomio ();
+        void calcularPolinomio ();
 
 };
 

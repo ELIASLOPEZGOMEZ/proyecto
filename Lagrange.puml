@@ -1,0 +1,13 @@
+@startuml Lagrange
+class Gauss
+class Lagrange
+class MenuPrincipal
+class MenuLagrange
+class MenuGauss
+
+
+MenuPrincipal *-- MenuGauss
+MenuPrincipal *-- MenuLagrange
+
+MenuGauss o-- Gauss
+MenuLagrange o-- Lagrange

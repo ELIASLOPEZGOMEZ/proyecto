@@ -38,13 +38,13 @@ int Lagrange::setValores(){
     return 0;
 }
 
-int Lagrange::setContadores (){
+void Lagrange::setContadores (){
 
     I = N -1;
     J = N -1 ;
 }
 
-int Lagrange::calcularPolinomio (){
+void Lagrange::calcularPolinomio (){
 
  float Px =( Matriz [0][1] * Li[0] ) + ( Matriz [1][1] * Li[1] ) + ( Matriz [2][1] * Li[2] );
         cout<<"\n\nEl resultado del polinomio es: "<<Px<<endl;
