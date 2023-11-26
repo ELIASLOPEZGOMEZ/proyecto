@@ -1,6 +1,9 @@
-#include <gauss.h>
-#include <lagrange.h>
-
+#include "Gauss.hpp"
+#include "Lagrange.hpp"
+#include "gauss.cpp"
+#include "lagrange.cpp"
+#include "menugauss.cpp"
+#include "menulagrange.cpp"
 
 void menu();
 

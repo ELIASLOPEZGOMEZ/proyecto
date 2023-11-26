@@ -1,5 +1,5 @@
 
-#include "gauss.h"
+#include "Gauss.hpp"
 
 
 void Gauss::creaMatriz(){

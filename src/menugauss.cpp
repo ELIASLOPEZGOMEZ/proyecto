@@ -1,5 +1,4 @@
-#include "gauss.h"
-
+#include "Gauss.hpp"
 
 void menuGauss(){
    Gauss objeto1;

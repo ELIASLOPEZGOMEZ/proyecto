@@ -13,7 +13,7 @@ class Lagrange {
 
     private:
 
-        int Matriz[3][2];
+        float Matriz[3][2];
         int N = 3;
         int I;
         int J;

@@ -1,5 +1,4 @@
-#include "lagrange.h"
-
+#include "Lagrange.hpp"
 
 int Lagrange::setValores(){
 
@@ -36,7 +35,6 @@ int Lagrange::setValores(){
 	    	return 1;
 			}
 		}
-
     return 0;
 }
 

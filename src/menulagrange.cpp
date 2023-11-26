@@ -1,5 +1,4 @@
-#include "lagrange.h"
-
+#include "Lagrange.hpp"
 
 void menuLagrange(){
 
