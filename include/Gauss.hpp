@@ -15,11 +15,11 @@ class Gauss {
 
 	private:
 
-		int n; // tama�o de la matriz cuadrada
-		double** mat; // para matriz
-		double* b; //  para valores independientes
-		double* x; // para resolver por sust inversa
-        int* per; // pivote
+		int n; 
+		double** mat; 
+		double* b;
+		double* x; 
+        int* per; 
 	public:
 
 		void creaMatriz();
