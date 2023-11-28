@@ -1,10 +1,9 @@
-CXX = x86_64-w64-mingw32-g++
-CXXFLAGS = include/Gauss.hpp include/Lagrange.hpp src/gauss.cpp 
-
+CXX = g++
+CXXFLAGS = 
 all: main
 
-bin/main : src/main.cpp 
-	$(CXX) $< $(CXXFLAGS) -o $@ 
+bin/main : src/main.cpp include/*
+	$(CXX) src/main.cpp -o $@ -I include
 
 Run: bin/main
 	./$<
