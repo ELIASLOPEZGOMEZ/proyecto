@@ -63,7 +63,7 @@ void MenuLagrange::showMenuLagrange()
             return;
         case 4:
             system("cls");
-            // cout<<"Usted esta regresando al menu principal.\n";
+            cout<<"Usted esta regresando al menu principal.\n";
             break;
         default:
             system("cls");
