@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <conio.h>
-#include "../include/MenuPrincipal.hpp"
+#include <MenuPrincipal.hpp>
 
 using namespace std;
 

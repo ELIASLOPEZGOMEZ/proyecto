@@ -3,8 +3,8 @@
 #include <conio.h>
 
 using namespace std;
-#include "MenuGauss.hpp"
-#include "MenuLagrange.hpp"
+#include <MenuGauss.hpp>
+#include <MenuLagrange.hpp>
 class MenuPrincipal
 {
 private:
