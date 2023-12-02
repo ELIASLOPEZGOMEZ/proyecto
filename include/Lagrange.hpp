@@ -6,6 +6,7 @@
 #include <conio.h>
 using namespace std;
 
+
 class Lagrange
 {
 
@@ -101,5 +102,4 @@ void Lagrange::calcularLx()
     cout << "\nEl resultado es: Li(3)=" << Li[2] << endl
          << endl;
 }
-
-#endif // LAGRANGE_H
+#endif 

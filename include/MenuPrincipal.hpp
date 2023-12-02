@@ -1,10 +1,11 @@
 #include <iostream>
 #include <iomanip>
 #include <conio.h>
-
-using namespace std;
 #include <MenuGauss.hpp>
 #include <MenuLagrange.hpp>
+
+using namespace std;
+
 class MenuPrincipal
 {
 private:
@@ -15,8 +16,8 @@ public:
 };
 void MenuPrincipal::showMenuPrincipal()
 {
-    MenuGauss menu2;
-    MenuLagrange menu3;
+    MenuGauss viewMenuGauss;
+    MenuLagrange viewMenuLagrange;
     
 
     do
@@ -37,12 +38,12 @@ void MenuPrincipal::showMenuPrincipal()
         case 1:
             system("cls");
             cout << "METODO DE RESOLUCION DE LAGRANGE \n";
-            menu3.showMenuLagrange();
+            viewMenuLagrange.showMenuLagrange();
             break;
         case 2:
             system("cls");
             cout << "METODO DE RESOLUCION DE SISTEMAS DE ECUACIONES \n";
-            menu2.showMenuGauss();
+            viewMenuGauss.showMenuGauss();
             break;
         case 3:
             system("cls");

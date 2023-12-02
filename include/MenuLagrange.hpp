@@ -1,8 +1,9 @@
 #include <iostream>
 #include <iomanip>
 #include <conio.h>
+#include <Lagrange.hpp>
+
 using namespace std;
-#include "Lagrange.hpp"
 
 class MenuLagrange
 {
@@ -17,7 +18,8 @@ public:
 void MenuLagrange::showMenuLagrange()
 {
    
-    Lagrange funciones;
+    Lagrange useFuntionsLagrange;
+    
     do
     {
         system("cls");
@@ -37,9 +39,9 @@ void MenuLagrange::showMenuLagrange()
             system("cls");
             do
             {
-             err = funciones.setValores();
+             err = useFuntionsLagrange.setValores();
             } while (err);
-            funciones.setContadores();
+            useFuntionsLagrange.setContadores();
             cout << endl;
             cout << "Presione una tecla para volver al menu" << endl;
             while (!kbhit())
@@ -47,7 +49,7 @@ void MenuLagrange::showMenuLagrange()
             break;
         case 2:
             system("cls");
-            funciones.calcularLx();
+            useFuntionsLagrange.calcularLx();
             cout << endl;
             cout << "Presione una tecla para volver al menu" << endl;
             while (!kbhit())
@@ -55,7 +57,7 @@ void MenuLagrange::showMenuLagrange()
             break;
         case 3:
             system("cls");
-            funciones.calcularPolinomio();
+            useFuntionsLagrange.calcularPolinomio();
             cout << endl;
             cout << "Presione una tecla para volver al menu principal" << endl;
             while (!kbhit())

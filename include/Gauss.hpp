@@ -8,9 +8,6 @@
 
 using namespace std;
 
-void menuGauss();
-
-
 class Gauss {
 
 	private:
@@ -22,22 +19,22 @@ class Gauss {
         int* per; 
 	public:
 
-		void creaMatriz();
-		void creaArrayValoresIndependientes();
+		void crearMatriz();
+		void crearArrayValoresIndependientes();
 		void ingresarDatos();
-		void muestraDatos();
-		void creaMatrizInverso();
-		void muestraIncongnitas();
-		void muestraSolucion();
+		void mostrarDatos();
+		void crearMatrizInverso();
+		void mostrarIncongnitas();
+		void mostrarSolucion();
 
-		void resuelvePivot();
-		void resuelveInversa();
+		void resolverPivot();
+		void resolverInversa();
 
-        void liberaMemo();
+        void liberarMemo();
 
 };
 
-void Gauss::creaMatriz(){
+void Gauss::crearMatriz(){
 
 	do{
 	cout<<"Ingrese el tamano de la matriz cuadrada (>1): ";
@@ -52,15 +49,15 @@ void Gauss::creaMatriz(){
 
 }
 
-void Gauss::creaArrayValoresIndependientes(){
+void Gauss::crearArrayValoresIndependientes(){
 
 	b = new double [n];
 }
 
 void Gauss::ingresarDatos(){
 
-	creaMatriz();
-	creaArrayValoresIndependientes();
+	crearMatriz();
+	crearArrayValoresIndependientes();
     cout<<"---------------------------------------------------"<<endl<<endl;
 	for (int i=0; i<n; i++)
   		for (int j=0;j<n; j++){
@@ -77,7 +74,7 @@ void Gauss::ingresarDatos(){
 
 }
 
-void Gauss::muestraDatos(){
+void Gauss::mostrarDatos(){
 
 	cout<<"\nSistema a resolver: \n";
 	for (int i=0; i<n; i++){
@@ -97,13 +94,13 @@ void Gauss::muestraDatos(){
 
 }
 
-void Gauss::creaMatrizInverso(){
+void Gauss::crearMatrizInverso(){
 
 	x= new double [n];
 
 }
 
-void Gauss::muestraSolucion(){
+void Gauss::mostrarSolucion(){
     int r=0;
 	for (int i=0; i<n;i++){
   		if(isnan(x[i]) || isinf(x[i])){
@@ -139,11 +136,11 @@ void Gauss::muestraSolucion(){
     }
     cout<<endl;
 
-    liberaMemo();
+    liberarMemo();
 
 }
 
-void Gauss::resuelvePivot(){
+void Gauss::resolverPivot(){
 
 
 
@@ -192,12 +189,12 @@ void Gauss::resuelvePivot(){
     	}
 	}
 
-	creaMatrizInverso();
-	resuelveInversa();
+	crearMatrizInverso();
+	resolverInversa();
 
 }
 
-void Gauss::resuelveInversa(){
+void Gauss::resolverInversa(){
 
 	for (int i=n-1;i>=0;i--){
    		x[i]=b[i];
@@ -209,7 +206,7 @@ void Gauss::resuelveInversa(){
 }
 
 
-void Gauss::liberaMemo(){
+void Gauss::liberarMemo(){
 
     delete[] mat;
     delete x;
@@ -217,5 +214,5 @@ void Gauss::liberaMemo(){
     delete per;
 
 }
-
 #endif
+

@@ -1,8 +1,9 @@
 #include <iostream>
 #include <iomanip>
 #include <conio.h>
+#include <Gauss.hpp>
+
 using namespace std;
-#include "Gauss.hpp"
 
 class MenuGauss
 {
@@ -14,7 +15,7 @@ public:
 
 void MenuGauss::showMenuGauss()
 {
-   Gauss funciones2;
+   Gauss useFuntionsGauss;
 
    do{
        system("cls");
@@ -32,18 +33,18 @@ void MenuGauss::showMenuGauss()
         switch(opcion){
             case 1:
                system("cls");
-               funciones2.ingresarDatos();
+               useFuntionsGauss.ingresarDatos();
                system("pause");
                break;
             case 2:
                system("cls");
-               funciones2.muestraDatos();
+               useFuntionsGauss.mostrarDatos();
                system("pause");
                break;
             case 3:
                system("cls");
-               funciones2.resuelvePivot();
-               funciones2.muestraSolucion();
+               useFuntionsGauss.resolverPivot();
+               useFuntionsGauss.mostrarSolucion();
                system("pause");
                return;
             case 4:

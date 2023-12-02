@@ -7,9 +7,9 @@ using namespace std;
 
 int main()
 {
-    MenuPrincipal menu123;
+    MenuPrincipal viewMenuPrincipal;
 
-    menu123.showMenuPrincipal();
+    viewMenuPrincipal.showMenuPrincipal();
 
     return 0;
 }
