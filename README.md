@@ -19,4 +19,13 @@ ecuaciones de n numero de variables._
     Opcion 3 para hacer el calculo del polinomio, es decir, hacer la suma de la interpolacion.
 
     Opcion 4 para regresar al menú anterior.
-    
+
+  + Metodo Gauss:
+
+    Opcion 1 para ingresar de cuanto es tu matriz e ingresar todos los datos requeridos.
+
+    Opcion 2 muestra el resultado de como quedaria tu ecuacion.
+
+    Opcion 3 muestra el valor de cada incognita.
+
+    Opcion 4 regresa al menu anterior.
