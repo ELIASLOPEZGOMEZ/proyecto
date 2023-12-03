@@ -6,5 +6,17 @@
    _Metodo Gauss: El método de Gauss-Jordan utiliza operaciones con matrices para resolver sistemas de
 ecuaciones de n numero de variables._
 
-### USO DEL PROGRAMA
-#### Makefile: Para compilar y ejecutar usa el siguiente comando en la terminal de powershell: _Make run_
+## USO DEL PROGRAMA
+#### Makefile: Para compilar y ejecutar usa el siguiente comando en la terminal de powershell: _"make run"_
+## USO DEL MENÚ
+  + _Ingresar opcion 1 para usar el metodo de Lagrange o ingresar opcion 2 para usar el metodo de Gauss._ 
+  + Metodo Lagrange: 
+   
+    Opcion 1 para ingresar los datos de tu matriz 3x2, ingresar los datos alternando entre las "x" y las "y".
+
+    Opcion 2 para hacer el calculo de tu interpolación, ingresar tu valor de "x" a interpolar.
+
+    Opcion 3 para hacer el calculo del polinomio, es decir, hacer la suma de la interpolacion.
+
+    Opcion 4 para regresar al menú anterior.
+    
