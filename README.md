@@ -1,7 +1,8 @@
 ![Portada](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/CETI_Logo.png/621px-CETI_Logo.png)
 
-Emiliano Mendoza Achirica 22310224 3G  
-Elias Fabián López Gómez 22310260 3G
+**Emiliano Mendoza Achirica 22310224 3G**  
+
+**Elias Fabián López Gómez 22310260 3G**
 # **PROYECTO FINAL** 
 ## INTERPOLACION DE LAGRANGE Y METODO DE GAUSS
    _Interpolacion de lagrange: Es una reformulación del polinomio de interpolación de Newton que el método evita el cálculo de las diferencias divididas._
