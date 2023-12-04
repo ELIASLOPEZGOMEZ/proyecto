@@ -10,16 +10,14 @@ class MenuPrincipal
 {
 private:
 int opcion;
+MenuGauss viewMenuGauss;
+MenuLagrange viewMenuLagrange;
    
 public:
     void showMenuPrincipal();
 };
 void MenuPrincipal::showMenuPrincipal()
 {
-    MenuGauss viewMenuGauss;
-    MenuLagrange viewMenuLagrange;
-    
-
     do
     {
         system("cls");

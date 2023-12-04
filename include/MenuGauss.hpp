@@ -9,13 +9,14 @@ class MenuGauss
 {
 private:
     int opcion = 0;
+    Gauss useFuntionsGauss;
+
 public:
     void showMenuGauss();
 };
 
 void MenuGauss::showMenuGauss()
 {
-   Gauss useFuntionsGauss;
 
    do{
        system("cls");

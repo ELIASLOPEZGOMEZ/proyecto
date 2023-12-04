@@ -9,5 +9,16 @@ class MenuGauss
 MenuPrincipal *-- MenuGauss
 MenuPrincipal *-- MenuLagrange
 
-MenuGauss o-- Gauss
-MenuLagrange o-- Lagrange
+MenuGauss *-- Gauss
+MenuLagrange *-- Lagrange
+
+class MenuPrincipal{
+    + viewMenuLagrange()
+    + viewMenuGauss()  
+}
+class MenuLagrange{
+    + showMenuLagrange()
+}
+class MenuGauss{
+    + showMenuGauss()
+}

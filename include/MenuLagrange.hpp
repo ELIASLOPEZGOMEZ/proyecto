@@ -10,16 +10,13 @@ class MenuLagrange
 private:
     int opcion;
     int err;
-
+    Lagrange useFuntionsLagrange;
 public:
     void showMenuLagrange();
 };
 
 void MenuLagrange::showMenuLagrange()
-{
-   
-    Lagrange useFuntionsLagrange;
-    
+{    
     do
     {
         system("cls");
