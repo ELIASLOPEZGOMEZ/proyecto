@@ -11,11 +11,11 @@ class Lagrange
 {
 
 private:
-    float Matriz[3][2];
-    int N = 3;
+    float Matriz[4][2];
+    int N = 4;
     int I;
     int J;
-    float Li[3];
+    float Li[4];
 
 public:
     int setValores();
@@ -27,7 +27,7 @@ public:
 int Lagrange::setValores()
 {
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < 4; i++)
     {
 
         for (int j = 0; j < 2; j++)
@@ -55,7 +55,7 @@ int Lagrange::setValores()
             return 1;
         }
     }
-    for (int r = 1; r < 3; r++)
+    for (int r = 1; r < 4; r++)
     {
         if (Matriz[r][0] == Matriz[0][0])
         {
@@ -77,29 +77,32 @@ void Lagrange::setContadores()
     J = N - 1;
 }
 
-void Lagrange::calcularPolinomio()
-{
+void Lagrange::calcularPolinomio (){
+	
+	 float Px =( Li[0] ) + (  Li[1] ) + ( Li[2] ) + (  Li[3] );
+	        cout<<"\n\nEl resultado del polinomio es: "<<setw(10)<<fixed<<setprecision(4)<<Px<<endl;
+	}
+	
 
-    float Px = (Matriz[0][1] * Li[0]) + (Matriz[1][1] * Li[1]) + (Matriz[2][1] * Li[2]);
-    cout << "\n\nEl resultado del polinomio es: " << Px << endl;
-}
-
-void Lagrange::calcularLx()
-{
-
-    int valorX;
-
-    cout << "\nIngrese el valor de X: \n";
-    cin >> valorX;
-
-    Li[0] = (Matriz[0][1]) * ((valorX - Matriz[1][0]) * (valorX - Matriz[2][0])) / ((Matriz[0][0] - Matriz[1][0]) * (Matriz[0][0] - Matriz[2][0]));
-    cout << "\nEl resultado es: Li(1)=" << Li[0] << endl;
-
-    Li[1] = (Matriz[0][2]) * ((valorX - Matriz[0][0]) * (valorX - Matriz[2][0])) / ((Matriz[1][0] - Matriz[0][0]) * (Matriz[1][0] - Matriz[2][0]));
-    cout << "\nEl resultado es: Li(2)=" << Li[1] << endl;
-
-    Li[2] = (Matriz[0][3]) * ((valorX - Matriz[0][0]) * (valorX - Matriz[1][0])) / ((Matriz[2][0] - Matriz[0][0]) * (Matriz[2][0] - Matriz[1][0]));
-    cout << "\nEl resultado es: Li(3)=" << Li[2] << endl
-         << endl;
-}
+	void Lagrange::calcularLx (){
+	
+	    float valorX;
+	
+	    cout<<"\nIngrese el valor de X: \n";
+	    cin>>valorX;
+	
+	    Li[0] = (Matriz[0][1])*((( valorX - Matriz[1][0] )  * ( valorX - Matriz[2][0])*( valorX - Matriz[3][0])) / (( Matriz [0][0] - Matriz[1][0]) * ( Matriz[0][0] - Matriz[2][0] )*( Matriz[0][0] - Matriz[3][0] )));
+		cout<<"\nEl resultado es: Li(1)="<<setw(10)<<fixed<<setprecision(4)<<Li[0]<<endl;
+	
+		Li[1] = (Matriz[1][1])*((( valorX - Matriz[0][0] ) * ( valorX - Matriz[2][0] )*( valorX - Matriz[3][0])) / (( Matriz [1][0] - Matriz [0][0] ) * ( Matriz [1][0] - Matriz [2][0] )*( Matriz[1][0]- Matriz[3][0])));
+	    cout<<"\nEl resultado es: Li(2)="<<setw(10)<<fixed<<setprecision(4)<<Li[1]<<endl;
+	
+	
+	    Li[2] = (Matriz[2][1])*((( valorX - Matriz[0][0] ) * ( valorX - Matriz[1][0] )*( valorX - Matriz[3][0])) / (( Matriz [2][0] - Matriz [0][0] ) * ( Matriz [2][0] - Matriz [1][0] )*( Matriz[2][0]- Matriz[3][0])));
+	    cout<<"\nEl resultado es: Li(3)="<<setw(10)<<fixed<<setprecision(4)<<Li[2]<<endl;
+	    
+	    
+	    Li[3] = (Matriz[3][1])*((( valorX - Matriz[0][0] ) * ( valorX - Matriz[1][0] )*( valorX - Matriz[2][0])) / (( Matriz [3][0] - Matriz [0][0] ) * ( Matriz [3][0] - Matriz [1][0] )*( Matriz[3][0]- Matriz[2][0])));
+	    cout<<"\nEl resultado es: Li(4)="<<setw(10)<<fixed<<setprecision(4)<<Li[3]<<endl<<endl;
+	}
 #endif 
