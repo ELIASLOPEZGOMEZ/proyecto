@@ -22,3 +22,9 @@ class MenuLagrange{
 class MenuGauss{
     + showMenuGauss()
 }
+class Gauss{
+    + useFuntionsGauss()
+}
+class Lagrange{
+    + useFuntionsLagrange()
+}

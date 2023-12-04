@@ -17,7 +17,6 @@ public:
 
 void MenuGauss::showMenuGauss()
 {
-
    do{
        system("cls");
        system("cls");
