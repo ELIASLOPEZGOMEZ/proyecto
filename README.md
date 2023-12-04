@@ -21,16 +21,51 @@ ecuaciones de n numero de variables._
 > [!IMPORTANT]
 > ## **Metodo Lagrange:**  
 >![MenuLa](./assets/images/menu%20la.png)  
->+ Opción 1.- Para ingresar los datos de tu matriz 3x2, ingresa los datos alternando entre las "x" y las "y".
->+ Opción 2.- Pra hacer el calculo de tu interpolación, ingresar tu valor de "x" a interpolar. 
->+ Opción 3.- Para hacer el calculo del polinomio, es decir, hacer la suma de la interpolacion.
->+ Opción 4.- Para regresar al menú anterior.  
+>+ **Opción 1.-** Para ingresar los datos de la matriz 4x2, ingresa los datos alternando entre las "x" y las "y".
+>
+>**Ejemplo:**
+>
+>![LAG1](./assets/images/Lag%201.png)
+>
+>
+>+ **Opción 2.-** Para hacer el calculo de la interpolación, ingresa tu valor de "x" a interpolar. 
+>
+>**Ejemplo:**
+>
+>![LAG2](./assets/images/Lag%202.png)
+>
+>
+>+ **Opción 3.-** Para hacer el calculo del polinomio, es decir, hacer la suma de la interpolacion y mostrar tu resultado.
+>
+>**Ejemplo:**
+>
+>![LAG3](./assets/images/Lag%203.png)
+>
+>+ **Opción 4.-** Para regresar al menú principal.  
 >
 > ## **Metodo Gauss:**
 >![MenuLa](./assets/images/menu%20Ga.png)
->+ Opción 1.- Para definir el tamaño de la matriz e ingresar los valores de la incognita y los valores independientes.
->+ Opción 2.- Para visualizar el sistema a resolver.
->+ Opción 3.- Para mostrar los resultados de cada incognita (x,y,z).
->+ Opción 4.- Para regresa al menu anterior.   
+>+ **Opción 1.-** Para definir el tamaño de la matriz e ingresar los valores de la incognita y los valores independientes.
+>
+>**Ejemplo:**
+>
+>![LAG3](./assets/images/Ga1.png)
+>
+>
+>+ **Opción 2.-** Para visualizar el sistema a resolver.
+>
+>**Ejemplo:**
+>
+>![LAG3](./assets/images/Ga2.png)
+>
+>
+>+ **Opción 3.-** Para mostrar los resultados de cada incognita (x,y,z).
+>
+>**Ejemplo:**
+>
+>![LAG3](./assets/images/Ga3.png)
+>
+>
+>+ **Opción 4.-** Para regresa al menu principal.   
 >
 
